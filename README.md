@@ -25,4 +25,35 @@ chromosome of interest;
 2. distributing crossovers uniformly at random, once again with
 respect to the genetic distance.
 
-Note that genetic distance
+Note that genetic distance is different from physical distance in
+nucleotides, since the degree of physical correlation changes as we
+move along a chromosome.
+Locally stretching and shrinking our "ruler" along the chromosome, to
+ensure that crossovers are distributed uniformly, is exactly the
+definition of genetic distance.
+
+A sample pedigree sample, **pedsample.txt**, is included.
+The format is simple.
+Each row is an individual, specified by four numbers:
+1. A label. Usually, we number individuals consecutively, starting
+   with one.
+2. The label of the father of the individual.
+3. The label of the mother.
+4. The sex of the individual, with '1' corresponding to male and '2'
+to female.
+
+Note that *founders* of a pedigree are individuals whose parents are
+not included.
+We indicate this by placing a 0 in both parent columns.
+
+Finally, **kinship.py** provides some mathematical tools for analysing
+relatedness between individuals on pedigrees.
+These can be used to check the simulation, and vice versa!
+
+### References
+
+- [*Mathematical and Statistical Methods for Genetic Analysis*](https://www.springer.com/gp/book/9780387953892)
+  (2002), Kenneth Lange. A clear and thorough book, with chapter 5
+  relevant to the kinship measures here.
+- ["Relatedness and the X chromosome"](https://hapax.github.io/assets/x-chromosome.pdf)
+  (2012), David Wakeham. A lab report I gave as a scientific stripling in 2012.
