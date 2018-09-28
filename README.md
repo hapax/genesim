@@ -32,7 +32,7 @@ Locally stretching and shrinking our "ruler" along the chromosome, to
 ensure that crossovers are distributed uniformly, is exactly the
 definition of genetic distance.
 
-Finally, **kinship.py** provides some mathematical tools for analysing
+To complement the simulation, **kinship.py** provides some mathematical tools for analysing
 relatedness between individuals on pedigrees.
 These can be used to check the simulation, and vice versa!
 
