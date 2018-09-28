@@ -53,17 +53,17 @@ not included.
 We indicate this by placing a 0 in both parent columns.
 Our sample pedigree reads:
 
-	| Label | Father | Mother | Sex
-	| ------------- |:-------------:| -----:|
-	|1	|0	|0	|1|
-	|2	|0	|0	|2|
-	|3	|1	|2	|1|
-	|4	|1	|2	|1|
-	|5	|1	|2	|2|
-	|6	|0	|0	|1|
-	|7	|0	|0	|2|
-	|8	|3	|7	|1|
-	|9	|6	|5	|2|
+| Label | Father | Mother | Sex |
+| --- | --- | --- | --- |
+|1	|0	|0	|1|
+|2	|0	|0	|2|
+|3	|1	|2	|1|
+|4	|1	|2	|1|
+|5	|1	|2	|2|
+|6	|0	|0	|1|
+|7	|0	|0	|2|
+|8	|3	|7	|1|
+|9	|6	|5	|2|
 
 We can picture the pedigree (by convention, squares are males and
 circle females:)
