@@ -32,6 +32,12 @@ Locally stretching and shrinking our "ruler" along the chromosome, to
 ensure that crossovers are distributed uniformly, is exactly the
 definition of genetic distance.
 
+Finally, **kinship.py** provides some mathematical tools for analysing
+relatedness between individuals on pedigrees.
+These can be used to check the simulation, and vice versa!
+
+### Pedigrees
+
 A sample pedigree sample, **pedsample.txt**, is included.
 The format is simple.
 Each row is an individual, specified by four numbers:
@@ -47,17 +53,17 @@ not included.
 We indicate this by placing a 0 in both parent columns.
 Our sample pedigree reads:
 
-| Label | Father | Mother | Sex
-| ------------- |:-------------:| -----:|
-|1	|0	|0	|1|
-|2	|0	|0	|2|
-|3	|1	|2	|1|
-|4	|1	|2	|1|
-|5	|1	|2	|2|
-|6	|0	|0	|1|
-|7	|0	|0	|2|
-|8	|3	|7	|1|
-|9	|6	|5	|2|
+	| Label | Father | Mother | Sex
+	| ------------- |:-------------:| -----:|
+	|1	|0	|0	|1|
+	|2	|0	|0	|2|
+	|3	|1	|2	|1|
+	|4	|1	|2	|1|
+	|5	|1	|2	|2|
+	|6	|0	|0	|1|
+	|7	|0	|0	|2|
+	|8	|3	|7	|1|
+	|9	|6	|5	|2|
 
 We can picture the pedigree (by convention, squares are males and
 circle females:)
@@ -67,10 +73,6 @@ circle females:)
     <figcaption><i></i></figcaption>
 	</div>
 </figure>
-
-Finally, **kinship.py** provides some mathematical tools for analysing
-relatedness between individuals on pedigrees.
-These can be used to check the simulation, and vice versa!
 
 ### References
 
