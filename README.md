@@ -6,7 +6,6 @@ humans (or other
 [diploid](https://en.wikipedia.org/wiki/Ploidy#Diploid) species) mate,
 the parent strings get randomly interlaced and turned into building instructions
 for the offspring.
-A point at which we "snip out" a substring to interlace is called a *crossover*.
 We can think about how chunks of genetic code, or
 substrings, get passed around a family tree by this process, and from
 looking at shared substrings, make guesses about how people are
@@ -14,7 +13,8 @@ related.
 
 This program **genesim.py** simulates the random interlacing of
 genetic code on a user-specified family tree structure.
-We model random interlacing of parent strings as a spatial
+A point at which we "snip out" a substring to interlace is called a *crossover*.
+A good model for random interlacing is a spatial
 [Poisson process](https://en.wikipedia.org/wiki/Poisson_point_process),
 which can be simulated by:
 1. choosing the total number of crossovers, which will be
@@ -69,7 +69,7 @@ We can picture the pedigree (by convention, squares are males and
 circle females:)
 
  <figure>
-    <div style="text-align:center"><img src ="/pedigree.png" width="432" />
+    <div style="text-align:center"><img src ="/pedigree.png" width="400" />
     <figcaption><i></i></figcaption>
 	</div>
 </figure>
@@ -80,4 +80,5 @@ circle females:)
   (2002), Kenneth Lange. A clear and thorough book, with chapter 5
   relevant to the kinship measures here.
 - ["Relatedness and the X chromosome"](https://hapax.github.io/assets/x-chromosome.pdf)
-  (2012), David Wakeham. A lab report I gave as a scientific stripling in 2012.
+  (2012), David Wakeham. A lab presentation from my time in the
+  [Bahlo lab](https://www.wehi.edu.au/people/melanie-bahlo) at [WEHI](https://www.wehi.edu.au/).
