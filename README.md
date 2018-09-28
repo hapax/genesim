@@ -36,6 +36,10 @@ To complement the simulation, **kinship.py** provides some mathematical tools fo
 relatedness between individuals on pedigrees.
 These can be used to check the simulation, and vice versa!
 
+### Usage
+
+To do!
+
 ### Pedigrees
 
 A sample pedigree sample, **pedsample.txt**, is included.
